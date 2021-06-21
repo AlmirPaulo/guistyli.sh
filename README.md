@@ -1,101 +1,34 @@
-# Styli.sh - Wallpaper switching made easy
+# GUIStyli.sh
+*A project by [Almir Paulo](https://almirpaulo.github.io)*
 
+GUIStyli.sh is a solution for people that wants an easy way to manage wallpapers. If you get bored from your wallpapers easily...not anymore! 
 
-Styli.sh is a Bash script that aims to automate the tedious process of finding new wallpapers, downloading and switching them via the configs. **Styli.sh** can search for specific wallpapers from unsplash or download
-a random image from the specified subreddits. If you have pywal it also can set automatically your terminal colors.
+## Installation
+[![GitHub all releases](https://img.shields.io/github/downloads/AlmirPaulo/guistyli.sh/total?style=flat-square)](...)
 
-![Preview](preview.png)
+Click the download button above to download the .deb package and run:
 
-## Requirements
+    sudo dpkg -i guistyli.sh.deb 
 
-This script is made to work with ```feh```, ```nitrogen```, 
-```XFCE```, ```GNOME```, ```KDE``` or  ```Sway```, having one of those is a requirement.```
-## Install
-```
-git clone https://github.com/thevinter/styli.sh
-cd styli.sh
-./styli.sh
-```
+<blockquote>I hope to make packages to other Linux distributions soon.</blockquote>
 
-## Usage
-```
-# To set a random 1920x1080 background
-$ ./styli.sh
+## The Quickest Guide in the West
+<!--image-->
+1. Set your Window Manager. At the moment we support: feh, nitrogen, XFCE, GNOME, KDE and Sway.
+2. Optionally, set a theme for the wallpaper. 
+3. Also optionally, set it to change the wallpaperi periodically.
 
-# To specify a desired width or height
-$ ./styli.sh -w 1080 -h 720
-$ ./styli.sh -w 2560
-$ ./styli.sh -h 1440
+<blockquote>
+For bugs or any other problems, please open an issue here on github.
+</blockquote>
 
-# To set a wallpaper based on a search term
-$ ./styli.sh -s island
-$ ./styli.sh -s "sea sunset"
-$ ./styli.sh -s sea -w 1080
+## Contribute
 
-# To get a random wallpaper from one of the set subreddits
-# NOTE: The width/height/search parameters DON'T work with reddit
-$ ./styli.sh -l reddit
+You can buy me a coffe once in a while to encourage me to keep working on the project.
 
-# To get a random wallpaper from a custom subreddit
-$ ./styli.sh -r <custom_reddit>
-$ ./styli.sh -r wallpaperdump
+<!--Buy me a coffe button-->
 
-# To use the builtin feh --bg options
-$ ./styli.sh -b <option>
-$ ./styli.sh -b bg-scale -r widescreen-wallpaper
+## Credits
 
-# To add custom feh flags
-$ ./styli.sh -c <flags>
-$ ./styli.sh -c --no-xinerama -r widescreen-wallpaper
+Thanks to [Nikita Brancatisano](https://github.com/thevinter), the original creator of styli.sh as a CLI tool. Without her (I suppose... I don't know, sorry...) work, this application would not be possible at all.  
 
-# To automatically set the terminal colors
-$ ./styli.sh -p
-
-# To use nitrogen instead of feh
-$ ./styli.sh -n
-
-# To update > 1 screens using nitrogen
-$ ./styli.sh -n -m <number_of_screens>
-
-# Choose a random background from a directory
-$ ./styli.sh -d /path/to/dir
-```
-## KDE, GNOME, XFCE & Sway
-KDE, GNOME, XFCE and Sway are natively supported without the need of feh. The script currently does not allow to scale the image.
-To use their built-in background managers use the appropriate flag.
-
-```
-# GNOME
-$ ./styli.sh -g
-
-# XFCE
-$ ./styli.sh -x
-
-# KDE
-$ ./styli.sh -k
-
-# Sway
-$ ./styli.sh -y
-```
-
-## Tips And Tricks
-To set a new background every time you reboot your computer add the following to your ```i3/config``` file (or any other WM config)
-```
-exec_always path/to/script/styli.sh
-```
-
-To change background every hour launch the following command
-```
-crontab -e
-```
-and add the following to the opened file
-```
-@hourly path/to/script/styli.sh
-```
-
-## Custom subreddits
-To manage custom subreddits just edit the ```subreddits``` file by placing there all your desired communities, one for each newline
-
-## TODO
-* Cinnamon support
-* Remove the need for flags by reading `$DESKTOP_SESSION`
