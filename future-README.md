@@ -13,7 +13,7 @@ Click the download button above to download the .deb package and run:
 <blockquote>I hope to make packages to other Linux distributions soon.</blockquote>
 
 ## The Quickest Guide in the West
-<!--image-->
+![preview image]()
 1. Set your Window Manager. At the moment we support: feh, nitrogen, XFCE, GNOME, KDE and Sway.
 2. Optionally, set a theme for the wallpaper. 
 <!--3. Also optionally, set it to change the wallpaperi periodically.-->
