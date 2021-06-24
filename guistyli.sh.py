@@ -15,7 +15,7 @@ layout = [
         ]
 
 #Create Window
-window = sg.Window('GUIStyli.sh', layout)
+window = sg.Window('GUIStyli.sh', layout, resizable=True, alpha_channel=0.87, icon="dog.png")
 
 # Event Loop to process "events" and get the "values" of the inputs
 while True:
@@ -62,3 +62,4 @@ while True:
         #    if ev2 == 'Stop!':
         #        break
           
+         
