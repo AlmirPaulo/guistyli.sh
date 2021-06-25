@@ -1,0 +1,26 @@
+# GUIStyli.sh
+A project by Almir Paulo
+https://almirpaulo.github.io
+
+Project Homepage: https://github.com/AlmirPaulo/guistyli.sh
+
+
+GUIStyli.sh is a solution for people that wants an easy way to manage wallpapers. If you get bored from your wallpapers easily...not anymore! 
+
+
+## The Quickest Guide in the West
+1. Set your Window Manager. At the moment we support: feh, nitrogen, XFCE, GNOME, KDE and Sway.
+2. Optionally, set a theme for the wallpaper. 
+3. Click the "Change" button.
+
+## Contribute
+
+If this software make you happy in any way, you can buy me a coffe once in a while to encourage me to keep working on projects like this.
+Link for this on Project Homepage.
+
+## Credits
+
+Thanks to [Nikita Brancatisano](https://github.com/thevinter), the original creator of styli.sh as a CLI tool. Without her work, this application would not be possible at all.  
+
+Also, here are the credits for the icon image:
+<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
